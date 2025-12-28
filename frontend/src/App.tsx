@@ -9,7 +9,10 @@ import { ScoreText } from './components/ScoreText';
 import { WordBank, PatternBank } from './components/WordBank';
 import type { Agent, BestOutput } from './types';
 
-const API_BASE = '/api';
+// Use environment variable for backend URL, fallback to localhost for development
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'localhost:8000';
+const API_PROTOCOL = BACKEND_URL.includes('localhost') ? 'http' : 'https';
+const API_BASE = `${API_PROTOCOL}://${BACKEND_URL}`;
 
 const MODEL_LABELS: Record<ModelType, string> = {
   genome: 'Genome',
