@@ -7,7 +7,6 @@ import { ConversationModal } from './components/ConversationModal';
 import { ChatWithAgent } from './components/ChatWithAgent';
 import { ScoreText } from './components/ScoreText';
 import { WordBank, PatternBank } from './components/WordBank';
-import { ScoreGraph } from './components/ScoreGraph';
 import type { Agent, BestOutput } from './types';
 
 const API_BASE = '/api';
@@ -36,9 +35,9 @@ export default function App() {
     latestMilestone,
     globalVocabulary,
     currentModel,
-    charNN,
-    wordNN,
-    genome,
+    charNN: _charNN,
+    wordNN: _wordNN,
+    genome: _genome,
     discoveredBigrams,
     discoveredTrigrams,
     discoveredSentences,

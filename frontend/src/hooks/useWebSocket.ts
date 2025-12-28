@@ -126,7 +126,7 @@ const WS_URL = `${WS_PROTOCOL}://${BACKEND_URL}/ws`;
 
 export function useWebSocket() {
   const wsRef = useRef<WebSocket | null>(null);
-  const reconnectTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const reconnectTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   
   const defaultMilestones: Milestones = {
     first_word: false,
@@ -245,8 +245,9 @@ export function useWebSocket() {
               }));
             } else {
               // Single model init
+              setState(s => {
               const modelType = msg.current_model ?? s.currentModel;
-              setState(s => ({
+              return {
                 ...s,
                 generation: msg.generation ?? 0,
                 isRunning: msg.is_running ?? false,
@@ -265,7 +266,7 @@ export function useWebSocket() {
                 // Word Genome phase
                 wordGenomePhase: msg.word_genome_phase ?? s.wordGenomePhase,
                 wordGenomePhaseProgress: msg.word_genome_phase_progress ?? s.wordGenomePhaseProgress,
-              }));
+              }});
             }
             break;
             
@@ -293,95 +294,91 @@ export function useWebSocket() {
               }));
             } else {
               // Route by model_type for independent training
-              const modelType = msg.model_type ?? s.currentModel;
-              
-              if (modelType === 'char_nn') {
-                setState(s => ({
-                  ...s,
-                  runningStatus: msg.running_status ?? { ...s.runningStatus, char_nn: true },
-                  charNN: {
-                    ...s.charNN,
-                    generation: msg.generation ?? s.charNN.generation,
-                    agents: msg.agents ?? s.charNN.agents,
-                    isRunning: true,
-                    conversations: {}
-                  },
-                  // Update main state if this is the current view
-                  ...(s.currentModel === 'char_nn' ? {
+              setState(s => {
+                const modelType = msg.model_type ?? s.currentModel;
+                
+                if (modelType === 'char_nn') {
+                  return {
+                    ...s,
+                    runningStatus: msg.running_status ?? { ...s.runningStatus, char_nn: true },
+                    charNN: {
+                      ...s.charNN,
+                      generation: msg.generation ?? s.charNN.generation,
+                      agents: msg.agents ?? s.charNN.agents,
+                      isRunning: true,
+                      conversations: {}
+                    },
+                    ...(s.currentModel === 'char_nn' ? {
+                      generation: msg.generation ?? s.generation,
+                      agents: msg.agents ?? s.agents,
+                      isRunning: true,
+                      currentTurn: 0,
+                      conversations: {}
+                    } : {})
+                  };
+                } else if (modelType === 'word_nn') {
+                  return {
+                    ...s,
+                    runningStatus: msg.running_status ?? { ...s.runningStatus, word_nn: true },
+                    wordNN: {
+                      ...s.wordNN,
+                      generation: msg.generation ?? s.wordNN.generation,
+                      agents: msg.agents ?? s.wordNN.agents,
+                      isRunning: true,
+                      conversations: {}
+                    },
+                    ...(s.currentModel === 'word_nn' ? {
+                      generation: msg.generation ?? s.generation,
+                      agents: msg.agents ?? s.agents,
+                      isRunning: true,
+                      currentTurn: 0,
+                      conversations: {}
+                    } : {})
+                  };
+                } else if (modelType === 'genome') {
+                  return {
+                    ...s,
+                    runningStatus: msg.running_status ?? { ...s.runningStatus, genome: true },
+                    genome: {
+                      ...s.genome,
+                      generation: msg.generation ?? s.genome.generation,
+                      agents: msg.agents ?? s.genome.agents,
+                      isRunning: true,
+                      conversations: {}
+                    },
+                    ...(s.currentModel === 'genome' ? {
+                      generation: msg.generation ?? s.generation,
+                      agents: msg.agents ?? s.agents,
+                      isRunning: true,
+                      currentTurn: 0,
+                      conversations: {}
+                    } : {})
+                  };
+                } else if (modelType === 'word_genome') {
+                  return {
+                    ...s,
+                    runningStatus: msg.running_status ?? { ...s.runningStatus, word_genome: true },
+                    wordGenomePhase: msg.word_genome_phase ?? s.wordGenomePhase,
+                    wordGenomePhaseProgress: msg.word_genome_phase_progress ?? s.wordGenomePhaseProgress,
+                    ...(s.currentModel === 'word_genome' ? {
+                      generation: msg.generation ?? s.generation,
+                      agents: msg.agents ?? s.agents,
+                      isRunning: true,
+                      currentTurn: 0,
+                      conversations: {}
+                    } : {})
+                  };
+                } else {
+                  return {
+                    ...s,
                     generation: msg.generation ?? s.generation,
                     agents: msg.agents ?? s.agents,
                     isRunning: true,
                     currentTurn: 0,
                     conversations: {}
-                  } : {})
-                }));
-              } else if (modelType === 'word_nn') {
-                setState(s => ({
-                  ...s,
-                  runningStatus: msg.running_status ?? { ...s.runningStatus, word_nn: true },
-                  wordNN: {
-                    ...s.wordNN,
-                    generation: msg.generation ?? s.wordNN.generation,
-                    agents: msg.agents ?? s.wordNN.agents,
-                    isRunning: true,
-                    conversations: {}
-                  },
-                  // Update main state if this is the current view
-                  ...(s.currentModel === 'word_nn' ? {
-                    generation: msg.generation ?? s.generation,
-                    agents: msg.agents ?? s.agents,
-                    isRunning: true,
-                    currentTurn: 0,
-                    conversations: {}
-                  } : {})
-                }));
-              } else if (modelType === 'genome') {
-                setState(s => ({
-                  ...s,
-                  runningStatus: msg.running_status ?? { ...s.runningStatus, genome: true },
-                  genome: {
-                    ...s.genome,
-                    generation: msg.generation ?? s.genome.generation,
-                    agents: msg.agents ?? s.genome.agents,
-                    isRunning: true,
-                    conversations: {}
-                  },
-                  // Update main state if this is the current view
-                  ...(s.currentModel === 'genome' ? {
-                    generation: msg.generation ?? s.generation,
-                    agents: msg.agents ?? s.agents,
-                    isRunning: true,
-                    currentTurn: 0,
-                    conversations: {}
-                  } : {})
-                }));
-              } else if (modelType === 'word_genome') {
-                setState(s => ({
-                  ...s,
-                  runningStatus: msg.running_status ?? { ...s.runningStatus, word_genome: true },
-                  // Word Genome phase tracking
-                  wordGenomePhase: msg.word_genome_phase ?? s.wordGenomePhase,
-                  wordGenomePhaseProgress: msg.word_genome_phase_progress ?? s.wordGenomePhaseProgress,
-                  // Update main state if this is the current view
-                  ...(s.currentModel === 'word_genome' ? {
-                    generation: msg.generation ?? s.generation,
-                    agents: msg.agents ?? s.agents,
-                    isRunning: true,
-                    currentTurn: 0,
-                    conversations: {}
-                  } : {})
-                }));
-              } else {
-                // Fallback: update main state
-                setState(s => ({
-                  ...s,
-                  generation: msg.generation ?? s.generation,
-                  agents: msg.agents ?? s.agents,
-                  isRunning: true,
-                  currentTurn: 0,
-                  conversations: {}
-                }));
-              }
+                  };
+                }
+              });
             }
             break;
           
@@ -439,9 +436,8 @@ export function useWebSocket() {
               });
             } else if (msg.updates) {
               // Route by model_type for independent training
-              const modelType = msg.model_type ?? s.currentModel;
-              
               setState(s => {
+                const modelType = msg.model_type ?? s.currentModel;
                 const newAgents = (msg.updates as any[])?.map((u: any) => u) || [];
                 
                 // Helper to update agents
@@ -524,9 +520,8 @@ export function useWebSocket() {
               }));
             } else {
               // Route by model_type for independent training
-              const modelType = msg.model_type ?? s.currentModel;
-              
               setState(s => {
+                const modelType = msg.model_type ?? s.currentModel;
                 const result: Partial<WebSocketState> = {
                   globalVocabulary: msg.global_vocabulary ?? s.globalVocabulary,
                   // Update pattern discoveries
@@ -657,21 +652,23 @@ export function useWebSocket() {
                 }
               }));
             } else {
-              const newModel = msg.current_model ?? s.currentModel;
-              setState(s => ({
-                ...s,
-                currentModel: newModel,
-                generation: msg.generation ?? s.generation,
-                agents: msg.agents ?? s.agents,
-                history: msg.history ?? s.history,
-                bestOutputs: msg.best_outputs ?? s.bestOutputs,
-                milestones: msg.milestones ?? s.milestones,
-                globalVocabulary: msg.global_vocabulary ?? s.globalVocabulary,
-                runningStatus: msg.running_status ?? s.runningStatus,
-                isRunning: msg.is_running ?? s.runningStatus[newModel as keyof RunningStatus] ?? false,
-                currentTurn: 0,
-                conversations: {},
-              }));
+              setState(s => {
+                const newModel = msg.current_model ?? s.currentModel;
+                return {
+                  ...s,
+                  currentModel: newModel,
+                  generation: msg.generation ?? s.generation,
+                  agents: msg.agents ?? s.agents,
+                  history: msg.history ?? s.history,
+                  bestOutputs: msg.best_outputs ?? s.bestOutputs,
+                  milestones: msg.milestones ?? s.milestones,
+                  globalVocabulary: msg.global_vocabulary ?? s.globalVocabulary,
+                  runningStatus: msg.running_status ?? s.runningStatus,
+                  isRunning: msg.is_running ?? s.runningStatus[newModel as keyof RunningStatus] ?? false,
+                  currentTurn: 0,
+                  conversations: {},
+                };
+              });
             }
             break;
           

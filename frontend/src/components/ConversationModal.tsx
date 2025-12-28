@@ -1,4 +1,4 @@
-import { useEffect, useCallback, useState } from 'react';
+import { useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NeuralViz } from './NeuralViz';
 import type { Agent, ConversationTurn, BestOutput } from '../types';
