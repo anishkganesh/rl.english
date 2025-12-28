@@ -1,155 +1,5 @@
 [
   {
-    "generation": 20,
-    "agent_id": "1e243fe7",
-    "conversation": [
-      {
-        "agent_text": "Towards editorials decisions what wonderful locale?",
-        "openai_response": "Can you tell me more about what you mean? Are you asking about a place for editorials?"
-      }
-    ],
-    "scores": {
-      "total": 0.352,
-      "structure_score": 0.4,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.3,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 0,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 0.0,
-      "discovered_bigrams": [],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The word order does not form a clear sentence, and the intent is vague."
-    },
-    "timestamp": 1766888329.639594
-  },
-  {
-    "generation": 20,
-    "agent_id": "467724b8",
-    "conversation": [
-      {
-        "agent_text": "Equipped personalized attached affiliation consecutive hypothetical!",
-        "openai_response": "That sounds interesting! Can you tell me more about what you mean?"
-      }
-    ],
-    "scores": {
-      "total": 0.316,
-      "structure_score": 0.4,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.1,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 0,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 0.0,
-      "discovered_bigrams": [],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The sequence consists of valid words but lacks any recognizable grammatical structure or coherent meaning."
-    },
-    "timestamp": 1766888329.639595
-  },
-  {
-    "generation": 20,
-    "agent_id": "165c326f",
-    "conversation": [
-      {
-        "agent_text": "Grenada organised hilton rental afterwards jet.",
-        "openai_response": "That sounds interesting! Are you talking about a trip to Grenada?"
-      }
-    ],
-    "scores": {
-      "total": 0.352,
-      "structure_score": 0.4,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.3,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 0,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 0.0,
-      "discovered_bigrams": [],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The word order is random and lacks a clear subject-verb structure or logical grouping."
-    },
-    "timestamp": 1766888329.639596
-  },
-  {
-    "generation": 20,
-    "agent_id": "89a11d3e",
-    "conversation": [
-      {
-        "agent_text": "Phantom leading include bbw dana province.",
-        "openai_response": "I\u2019m not sure what that means. Can you explain it more?"
-      }
-    ],
-    "scores": {
-      "total": 0.316,
-      "structure_score": 0.4,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.1,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 0,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 0.0,
-      "discovered_bigrams": [],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The word order is random and does not form any coherent or meaningful phrases."
-    },
-    "timestamp": 1766888329.639597
-  },
-  {
-    "generation": 20,
-    "agent_id": "6198f27b",
-    "conversation": [
-      {
-        "agent_text": "Why judge fiji halloween january austria.",
-        "openai_response": "It sounds like you are mixing many words! Can you tell me more about what you mean?"
-      }
-    ],
-    "scores": {
-      "total": 0.316,
-      "structure_score": 0.4,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.1,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 0,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 0.0,
-      "discovered_bigrams": [],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The text consists of a random assortment of words without any discernible structure or meaning."
-    },
-    "timestamp": 1766888329.639597
-  },
-  {
     "generation": 21,
     "agent_id": "2aeb1609",
     "conversation": [
@@ -33237,5 +33087,186 @@
       }
     },
     "timestamp": 1766895414.290547
+  },
+  {
+    "generation": 41,
+    "agent_id": "b9b408f9",
+    "conversation": [
+      {
+        "agent_text": "The dans cottage dominican provision conditional removing explicitly year!",
+        "openai_response": "It sounds like you're trying to say something important. Can you tell me more?"
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.3,
+      "grammar_score": 0.1,
+      "coherence_score": 0.0,
+      "total": 0.4,
+      "reason": "Capital start and punctuation present, but lacks coherence and valid patterns.",
+      "discovered_bigrams": [
+        "the dans"
+      ],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 9,
+      "bigram_count": 1,
+      "phase": 2,
+      "details": {
+        "total_100": 40.0,
+        "structure_100": 30.0,
+        "patterns_100": 10.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Capital start and punctuation present, but lacks coherence and valid patterns.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766895988.376771
+  },
+  {
+    "generation": 41,
+    "agent_id": "e6488fe1",
+    "conversation": [
+      {
+        "agent_text": "We tip ordered weekly alliance promoting transit.",
+        "openai_response": "That sounds interesting! Can you tell me more about it?"
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.6,
+      "grammar_score": 0.0,
+      "coherence_score": 0.0,
+      "total": 0.6,
+      "reason": "Capital start and punctuation present, but lacks valid patterns.",
+      "discovered_bigrams": [],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 7,
+      "bigram_count": 0,
+      "phase": 2,
+      "details": {
+        "total_100": 60.0,
+        "structure_100": 60.0,
+        "patterns_100": 0.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Capital start and punctuation present, but lacks valid patterns.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766895988.376773
+  },
+  {
+    "generation": 42,
+    "agent_id": "9c7701d5",
+    "conversation": [
+      {
+        "agent_text": "She example explicitly removing generators wings apt.",
+        "openai_response": "It sounds like you want to talk about generators and wings. Can you explain more?"
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.15,
+      "grammar_score": 0.2,
+      "coherence_score": 0.0,
+      "total": 0.35,
+      "reason": "Capitalization is correct, but punctuation is missing and word count exceeds limit.",
+      "discovered_bigrams": [],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 7,
+      "bigram_count": 0,
+      "phase": 2,
+      "details": {
+        "total_100": 35.0,
+        "structure_100": 15.0,
+        "patterns_100": 20.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Capitalization is correct, but punctuation is missing and word count exceeds limit.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766896060.0510788
+  },
+  {
+    "generation": 42,
+    "agent_id": "35cb7faa",
+    "conversation": [
+      {
+        "agent_text": "The temporarily cool percentage explicitly cuts avenue!",
+        "openai_response": "That sounds interesting! Can you explain what you mean by that?"
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.45,
+      "grammar_score": 0.15,
+      "coherence_score": 0.0,
+      "total": 0.6,
+      "reason": "Correct structure with capital start and punctuation, but lacks valid patterns.",
+      "discovered_bigrams": [
+        "the temporarily"
+      ],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 7,
+      "bigram_count": 1,
+      "phase": 2,
+      "details": {
+        "total_100": 60.0,
+        "structure_100": 45.0,
+        "patterns_100": 15.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Correct structure with capital start and punctuation, but lacks valid patterns.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766896060.051081
+  },
+  {
+    "generation": 42,
+    "agent_id": "1fb5392d",
+    "conversation": [
+      {
+        "agent_text": "The host modify screensavers remarkable graham indianapolis!",
+        "openai_response": "It sounds like you're talking about a screensaver. Can you explain more about it?"
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.45,
+      "grammar_score": 0.15,
+      "coherence_score": 0.0,
+      "total": 0.6,
+      "reason": "Good structure but lacks valid patterns and coherence.",
+      "discovered_bigrams": [
+        "the host"
+      ],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 7,
+      "bigram_count": 1,
+      "phase": 2,
+      "details": {
+        "total_100": 60.0,
+        "structure_100": 45.0,
+        "patterns_100": 15.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Good structure but lacks valid patterns and coherence.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766896060.051081
   }
 ]

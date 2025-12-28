@@ -489,8 +489,8 @@ export function useWebSocket() {
                       newConversations[agentId] = [];
                     }
                     newConversations[agentId].push({
-                      agent_text: update.agent_text,
-                      openai_response: update.openai_response
+                      agent_text: update.agent_text ?? '',
+                      openai_response: update.openai_response ?? ''
                     });
                   }
                 }
