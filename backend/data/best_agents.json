@@ -1,59 +1,5 @@
 [
   {
-    "generation": 355,
-    "agent_id": "97a85e4b",
-    "score": 0.23500000000000001,
-    "exploration_rate": 0.02,
-    "vocabulary_size": 91,
-    "model_type": "word_nn",
-    "timestamp": 1766839785.4830341
-  },
-  {
-    "generation": 356,
-    "agent_id": "c6b6e0d3",
-    "score": 0.325,
-    "exploration_rate": 0.02,
-    "vocabulary_size": 91,
-    "model_type": "word_nn",
-    "timestamp": 1766839792.238006
-  },
-  {
-    "generation": 357,
-    "agent_id": "f39c47e9",
-    "score": 0.325,
-    "exploration_rate": 0.02,
-    "vocabulary_size": 91,
-    "model_type": "word_nn",
-    "timestamp": 1766839800.3721018
-  },
-  {
-    "generation": 358,
-    "agent_id": "db24c2a0",
-    "score": 0.28,
-    "exploration_rate": 0.02,
-    "vocabulary_size": 91,
-    "model_type": "word_nn",
-    "timestamp": 1766839808.104019
-  },
-  {
-    "generation": 359,
-    "agent_id": "df952b46",
-    "score": 0.325,
-    "exploration_rate": 0.02,
-    "vocabulary_size": 91,
-    "model_type": "word_nn",
-    "timestamp": 1766839814.516832
-  },
-  {
-    "generation": 360,
-    "agent_id": "8929f086",
-    "score": 0.28,
-    "exploration_rate": 0.02,
-    "vocabulary_size": 91,
-    "model_type": "word_nn",
-    "timestamp": 1766839821.4413261
-  },
-  {
     "generation": 361,
     "agent_id": "f39c47e9",
     "score": 0.325,
@@ -8998,5 +8944,59 @@
     "vocabulary_size": 100,
     "model_type": "word_genome",
     "timestamp": 1766893225.0448651
+  },
+  {
+    "generation": 0,
+    "agent_id": "7df16bb8",
+    "score": 0.55,
+    "exploration_rate": 0.4257288855474377,
+    "vocabulary_size": 100,
+    "model_type": "word_genome",
+    "timestamp": 1766893577.687698
+  },
+  {
+    "generation": 1,
+    "agent_id": "bab658f5",
+    "score": 0.45,
+    "exploration_rate": 0.27733734663953813,
+    "vocabulary_size": 100,
+    "model_type": "word_genome",
+    "timestamp": 1766893627.354647
+  },
+  {
+    "generation": 2,
+    "agent_id": "a7509f9b",
+    "score": 0.4,
+    "exploration_rate": 0.1959027365842829,
+    "vocabulary_size": 100,
+    "model_type": "word_genome",
+    "timestamp": 1766893664.889458
+  },
+  {
+    "generation": 3,
+    "agent_id": "d5205136",
+    "score": 0.2,
+    "exploration_rate": 0.26640914860592724,
+    "vocabulary_size": 100,
+    "model_type": "word_genome",
+    "timestamp": 1766893704.6010408
+  },
+  {
+    "generation": 4,
+    "agent_id": "8df11b0a",
+    "score": 0.4,
+    "exploration_rate": 0.2694114557027355,
+    "vocabulary_size": 100,
+    "model_type": "word_genome",
+    "timestamp": 1766893743.784172
+  },
+  {
+    "generation": 5,
+    "agent_id": "99aa1eb9",
+    "score": 0.3,
+    "exploration_rate": 0.30792528402560887,
+    "vocabulary_size": 100,
+    "model_type": "word_genome",
+    "timestamp": 1766893777.193768
   }
 ]

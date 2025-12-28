@@ -3,6 +3,8 @@
   "outputDirectory": "frontend/dist",
   "framework": "vite",
   "installCommand": "cd frontend && npm install",
-  "devCommand": "cd frontend && npm run dev"
+  "devCommand": "cd frontend && npm run dev",
+  "env": {
+    "VITE_BACKEND_URL": "@backend_url"
+  }
 }
-

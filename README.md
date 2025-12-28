@@ -11,51 +11,28 @@ A multi-agent reinforcement learning system where AI agents learn English from s
 | **Word NN** | Word-level transformer using discovered vocabulary |
 | **Word Genome** | Word-level genetic algorithm with curriculum learning |
 
-## Architecture
+## Quick Start (Local Development)
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    React Frontend (port 3000)                │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
-│  │ Agent Grid  │  │Score Graph  │  │   Best Outputs      │  │
-│  │ (real-time) │  │ (history)   │  │   (hall of fame)    │  │
-│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
-│  ┌──────────────────────────────────────────────────────┐   │
-│  │  Pattern Banks: Words | Bigrams | Trigrams | Sentences│   │
-│  └──────────────────────────────────────────────────────┘   │
-└──────────────────────────┬──────────────────────────────────┘
-                           │ WebSocket
-┌──────────────────────────┴──────────────────────────────────┐
-│                   FastAPI Backend (port 8000)                │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
-│  │   Agents    │  │  Evolution  │  │  OpenAI Scorer      │  │
-│  │ (4 models)  │  │  + NN Train │  │  (phase rubrics)    │  │
-│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
-└─────────────────────────────────────────────────────────────┘
-```
-
-## Quick Start
-
-### 1. Set up the Backend
+### 1. Backend Setup
 
 ```bash
 cd backend
 
 # Create virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Set your OpenAI API key
-export OPENAI_API_KEY="your-key-here"
+export OPENAI_API_KEY="sk-your-key-here"
 
 # Start the server
 python main.py
 ```
 
-### 2. Set up the Frontend
+### 2. Frontend Setup
 
 ```bash
 cd frontend
@@ -67,13 +44,88 @@ npm install
 npm run dev
 ```
 
-### 3. Open the UI
+### 3. Open http://localhost:3000 and click **Start**
 
-Navigate to http://localhost:3000 and click **Start** to begin training.
+---
+
+## 🚀 Production Deployment
+
+### Architecture
+
+```
+┌─────────────────────────────────────────┐
+│           Vercel (Frontend)             │
+│         Static React/Vite App           │
+│   Connects via WebSocket to Backend     │
+└────────────────────┬────────────────────┘
+                     │ wss://
+┌────────────────────▼────────────────────┐
+│          Railway (Backend)              │
+│       Python FastAPI + WebSocket        │
+│         + OpenAI API calls              │
+└─────────────────────────────────────────┘
+```
+
+### Step 1: Deploy Backend to Railway
+
+1. **Go to [Railway.app](https://railway.app)** and sign in with GitHub
+
+2. **Create New Project** → **Deploy from GitHub repo**
+
+3. **Select your `rl.english` repository**
+
+4. **Configure the service:**
+   - Root Directory: `backend`
+   - Start Command: `python main.py`
+
+5. **Add Environment Variable:**
+   - Click on the service → **Variables** tab
+   - Add: `OPENAI_API_KEY` = `sk-your-openai-key-here`
+
+6. **Generate Domain:**
+   - Go to **Settings** → **Networking** → **Generate Domain**
+   - Copy the domain (e.g., `rl-english-production.up.railway.app`)
+
+7. **Wait for deployment** (2-3 minutes)
+
+### Step 2: Deploy Frontend to Vercel
+
+1. **Go to [Vercel.com](https://vercel.com)** and sign in with GitHub
+
+2. **Add New Project** → **Import** your `rl.english` repository
+
+3. **Configure Project:**
+   - Framework Preset: **Vite**
+   - Root Directory: `./` (leave as default)
+   - Build Command: `cd frontend && npm install && npm run build`
+   - Output Directory: `frontend/dist`
+
+4. **Add Environment Variable:**
+   - Expand **Environment Variables**
+   - Add: `VITE_BACKEND_URL` = `your-railway-domain.up.railway.app`
+   - ⚠️ **Do NOT include `https://` or `wss://`** - just the domain
+
+5. **Click Deploy** and wait (1-2 minutes)
+
+6. **Done!** Your app is live at `your-project.vercel.app`
+
+---
+
+## Environment Variables Summary
+
+### Backend (Railway)
+| Variable | Value | Required |
+|----------|-------|----------|
+| `OPENAI_API_KEY` | `sk-your-key-here` | Yes |
+
+### Frontend (Vercel)
+| Variable | Value | Required |
+|----------|-------|----------|
+| `VITE_BACKEND_URL` | `your-app.railway.app` | Yes |
+
+---
 
 ## Word Genome Curriculum Learning
-
-The Word Genome model uses a 4-phase curriculum:
 
 | Phase | Focus | Criteria |
 |-------|-------|----------|
@@ -98,31 +150,6 @@ Edit `backend/config.py`:
 | mutation_rate | 0.1 | Probability of genome mutation |
 | elitism_ratio | 0.2 | Top % kept unchanged |
 | initial_exploration | 0.5 | Starting random action probability |
-| exploration_decay | 0.99 | Per-generation exploration reduction |
-
-## API Endpoints
-
-- `POST /start` - Start training
-- `POST /stop` - Pause training
-- `POST /reset` - Reset to initial state
-- `GET /state` - Get current state
-- `POST /switch_model` - Switch between model types
-- `WS /ws` - WebSocket for real-time updates
-
-## Deployment
-
-This project is configured for Vercel deployment:
-
-```bash
-# Push to GitHub
-git add .
-git commit -m "Initial commit"
-git push origin main
-
-# Connect to Vercel and deploy
-```
-
-Note: The backend requires a separate hosting solution (Railway, Render, etc.) with WebSocket support.
 
 ## Requirements
 

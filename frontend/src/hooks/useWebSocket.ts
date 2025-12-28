@@ -119,7 +119,10 @@ export interface WebSocketState {
   gptFirstMessage: string;
 }
 
-const WS_URL = 'ws://localhost:8000/ws';
+// Use environment variable for backend URL, fallback to localhost for development
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'localhost:8000';
+const WS_PROTOCOL = BACKEND_URL.includes('localhost') ? 'ws' : 'wss';
+const WS_URL = `${WS_PROTOCOL}://${BACKEND_URL}/ws`;
 
 export function useWebSocket() {
   const wsRef = useRef<WebSocket | null>(null);

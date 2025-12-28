@@ -1,279 +1,5 @@
 [
   {
-    "generation": 17,
-    "agent_id": "e498080e",
-    "conversation": [
-      {
-        "agent_text": "Null instrumentation commissioner climate vegetable advancement!",
-        "openai_response": "That sounds interesting! Can you tell me more about it?"
-      }
-    ],
-    "scores": {
-      "total": 0.316,
-      "structure_score": 0.4,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.1,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 0,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 0.0,
-      "discovered_bigrams": [],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The text consists of a random assortment of valid words with no discernible structure or meaning."
-    },
-    "timestamp": 1766888242.163979
-  },
-  {
-    "generation": 17,
-    "agent_id": "db77c833",
-    "conversation": [
-      {
-        "agent_text": "Dvd mortality cumulative participant recreational stationery.",
-        "openai_response": "That sounds interesting! Can you tell me more about it?"
-      }
-    ],
-    "scores": {
-      "total": 0.316,
-      "structure_score": 0.4,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.1,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 0,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 0.0,
-      "discovered_bigrams": [],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The words are randomly ordered with no discernible subject-verb structure or coherent meaning."
-    },
-    "timestamp": 1766888242.163981
-  },
-  {
-    "generation": 17,
-    "agent_id": "39182b00",
-    "conversation": [
-      {
-        "agent_text": "The job resulted evaluations also tattoo.",
-        "openai_response": "I think you meant \"the job resulted in evaluations.\" Can you explain what you mean by \"tattoo\"?"
-      }
-    ],
-    "scores": {
-      "total": 0.42600000000000005,
-      "structure_score": 0.55,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.1,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 1,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 1.0,
-      "discovered_bigrams": [
-        "the job"
-      ],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The words are arranged in a random order with no clear subject-verb relationship or coherent meaning."
-    },
-    "timestamp": 1766888242.163983
-  },
-  {
-    "generation": 18,
-    "agent_id": "c0d4cb1f",
-    "conversation": [
-      {
-        "agent_text": "A stats employ playing chicks although.",
-        "openai_response": "It sounds like you meant something different. Can you try to explain it again?"
-      }
-    ],
-    "scores": {
-      "total": 0.42600000000000005,
-      "structure_score": 0.55,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.1,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 1,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 1.0,
-      "discovered_bigrams": [
-        "a stats"
-      ],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The word order is random and lacks any coherent structure or meaning."
-    },
-    "timestamp": 1766888268.229994
-  },
-  {
-    "generation": 18,
-    "agent_id": "5b9458f6",
-    "conversation": [
-      {
-        "agent_text": "Would bronze cdt slovakia cart an.",
-        "openai_response": "Can you please explain what you mean by that?"
-      }
-    ],
-    "scores": {
-      "total": 0.316,
-      "structure_score": 0.4,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.1,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 0,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 0.0,
-      "discovered_bigrams": [],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The words are arranged randomly without any recognizable sentence structure or coherent meaning."
-    },
-    "timestamp": 1766888268.229995
-  },
-  {
-    "generation": 18,
-    "agent_id": "a55fffe2",
-    "conversation": [
-      {
-        "agent_text": "Substances cfr father formatting certificates flavor.",
-        "openai_response": "It sounds like you're using some complex words. Can you tell me what you mean?"
-      }
-    ],
-    "scores": {
-      "total": 0.316,
-      "structure_score": 0.4,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.1,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 0,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 0.0,
-      "discovered_bigrams": [],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The words are arranged in a random order without forming any meaningful phrases or sentences."
-    },
-    "timestamp": 1766888268.229996
-  },
-  {
-    "generation": 18,
-    "agent_id": "ca8d5119",
-    "conversation": [
-      {
-        "agent_text": "Involved keyword comparison seller i playstation.",
-        "openai_response": "Are you asking about comparing PlayStation sellers? Can you tell me more?"
-      }
-    ],
-    "scores": {
-      "total": 0.316,
-      "structure_score": 0.4,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.1,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 0,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 0.0,
-      "discovered_bigrams": [],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The word order is random and does not form a coherent sentence or convey a clear message."
-    },
-    "timestamp": 1766888268.2299972
-  },
-  {
-    "generation": 18,
-    "agent_id": "de0e6a2f",
-    "conversation": [
-      {
-        "agent_text": "I irrigation trips silicon cup syndrome.",
-        "openai_response": "It sounds like you\u2019re trying to say something specific. Can you explain a bit more?"
-      }
-    ],
-    "scores": {
-      "total": 0.316,
-      "structure_score": 0.4,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.1,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 0,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 0.0,
-      "discovered_bigrams": [],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The words are arranged in a random order without any clear grammatical structure or meaning."
-    },
-    "timestamp": 1766888268.229999
-  },
-  {
-    "generation": 18,
-    "agent_id": "020f49a7",
-    "conversation": [
-      {
-        "agent_text": "Would pentium survive untitled spreading introductory.",
-        "openai_response": "That sounds interesting! Can you tell me more about what you mean?"
-      }
-    ],
-    "scores": {
-      "total": 0.316,
-      "structure_score": 0.4,
-      "vocabulary_score": 1.0,
-      "grammar_score": 0.1,
-      "coherence_score": 0.1,
-      "has_capital_start": true,
-      "has_punctuation_end": true,
-      "has_proper_spacing": true,
-      "word_count": 6,
-      "bigram_count": 0,
-      "has_subject_verb": false,
-      "has_svo": false,
-      "phase_mastery": 0.0,
-      "discovered_bigrams": [],
-      "discovered_trigrams": [],
-      "is_valid_sentence": false,
-      "reason": "The words are arranged in a random order with no clear subject-verb structure or logical grouping."
-    },
-    "timestamp": 1766888268.23
-  },
-  {
     "generation": 18,
     "agent_id": "09464b33",
     "conversation": [
@@ -33060,5 +32786,332 @@
       }
     },
     "timestamp": 1766893224.9966521
+  },
+  {
+    "generation": 0,
+    "agent_id": "7df16bb8",
+    "conversation": [
+      {
+        "agent_text": "Stars separately ford trackbacks john be telephone?",
+        "openai_response": "I\u2019m not sure I understand. Can you try to say it another way?"
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.55,
+      "grammar_score": 0.0,
+      "coherence_score": 0.0,
+      "total": 0.55,
+      "reason": "Sentence starts with a capital letter, ends with a question mark, but has spacing issues.",
+      "discovered_bigrams": [],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 7,
+      "bigram_count": 0,
+      "phase": 1,
+      "details": {
+        "total_100": 55.0,
+        "structure_100": 55.0,
+        "patterns_100": 0.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Sentence starts with a capital letter, ends with a question mark, but has spacing issues.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766893577.638155
+  },
+  {
+    "generation": 0,
+    "agent_id": "b3888d96",
+    "conversation": [
+      {
+        "agent_text": "The cycles expanded care colonial cite central?",
+        "openai_response": "It sounds like you're asking about something specific. Can you say it in another way?"
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.55,
+      "grammar_score": 0.0,
+      "coherence_score": 0.0,
+      "total": 0.55,
+      "reason": "Sentence starts with a capital letter, ends with a question mark, but has spacing issues.",
+      "discovered_bigrams": [
+        "the cycles"
+      ],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 7,
+      "bigram_count": 1,
+      "phase": 1,
+      "details": {
+        "total_100": 55.0,
+        "structure_100": 55.0,
+        "patterns_100": 0.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Sentence starts with a capital letter, ends with a question mark, but has spacing issues.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766893577.63817
+  },
+  {
+    "generation": 0,
+    "agent_id": "bc42335c",
+    "conversation": [
+      {
+        "agent_text": "Hosts board bottom getting brought liabilities kyle yoga resolutions hostels?",
+        "openai_response": "It sounds like you're mixing some words. Can you tell me more about what you mean?"
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.55,
+      "grammar_score": 0.0,
+      "coherence_score": 0.0,
+      "total": 0.55,
+      "reason": "Sentence starts with a capital letter, ends with a question mark, but has spacing issues.",
+      "discovered_bigrams": [],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 10,
+      "bigram_count": 0,
+      "phase": 1,
+      "details": {
+        "total_100": 55.0,
+        "structure_100": 55.0,
+        "patterns_100": 0.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Sentence starts with a capital letter, ends with a question mark, but has spacing issues.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766893577.638174
+  },
+  {
+    "generation": 0,
+    "agent_id": "0993b1c3",
+    "conversation": [
+      {
+        "agent_text": "The prince movers optimization pull treat madrid?",
+        "openai_response": "Can you explain more about what you mean? Are you asking about moving to Madrid?"
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.55,
+      "grammar_score": 0.0,
+      "coherence_score": 0.0,
+      "total": 0.55,
+      "reason": "Sentence starts with a capital letter, ends with a question mark, but has spacing issues.",
+      "discovered_bigrams": [
+        "the prince"
+      ],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 7,
+      "bigram_count": 1,
+      "phase": 1,
+      "details": {
+        "total_100": 55.0,
+        "structure_100": 55.0,
+        "patterns_100": 0.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Sentence starts with a capital letter, ends with a question mark, but has spacing issues.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766893577.638177
+  },
+  {
+    "generation": 1,
+    "agent_id": "bab658f5",
+    "conversation": [
+      {
+        "agent_text": "An purchased artistic impacts territories utilize strategic common videos.",
+        "openai_response": "That sounds interesting! Can you tell me more about the videos?"
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.3,
+      "grammar_score": 0.15,
+      "coherence_score": 0.0,
+      "total": 0.45,
+      "reason": "Capital start and punctuation present, but spacing and patterns are lacking.",
+      "discovered_bigrams": [
+        "an purchased"
+      ],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 9,
+      "bigram_count": 1,
+      "phase": 2,
+      "details": {
+        "total_100": 45.0,
+        "structure_100": 30.0,
+        "patterns_100": 15.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Capital start and punctuation present, but spacing and patterns are lacking.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766893627.230207
+  },
+  {
+    "generation": 1,
+    "agent_id": "37e1c4e0",
+    "conversation": [
+      {
+        "agent_text": "Can farms routine specify fwd ivory occasions?",
+        "openai_response": "Can you please rephrase that? I'm not sure I understand."
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.3,
+      "grammar_score": 0.15,
+      "coherence_score": 0.0,
+      "total": 0.45,
+      "reason": "Capital start and punctuation present, but spacing and patterns are lacking.",
+      "discovered_bigrams": [],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 7,
+      "bigram_count": 0,
+      "phase": 2,
+      "details": {
+        "total_100": 45.0,
+        "structure_100": 30.0,
+        "patterns_100": 15.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Capital start and punctuation present, but spacing and patterns are lacking.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766893627.2302148
+  },
+  {
+    "generation": 2,
+    "agent_id": "a7509f9b",
+    "conversation": [
+      {
+        "agent_text": "A pays guru warning central glossary names priority?",
+        "openai_response": "Can you please clarify your question? It seems a bit unclear."
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.4,
+      "grammar_score": 0.0,
+      "coherence_score": 0.0,
+      "total": 0.4,
+      "reason": "Sentence has capital start and punctuation but lacks valid patterns.",
+      "discovered_bigrams": [
+        "a pays"
+      ],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 8,
+      "bigram_count": 1,
+      "phase": 2,
+      "details": {
+        "total_100": 40.0,
+        "structure_100": 40.0,
+        "patterns_100": 0.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Sentence has capital start and punctuation but lacks valid patterns.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766893664.8397708
+  },
+  {
+    "generation": 2,
+    "agent_id": "7562202c",
+    "conversation": [
+      {
+        "agent_text": "The bias freelance continuity coach europe push seeds moldova.",
+        "openai_response": "That sounds interesting! Can you tell me more about what a continuity coach does?"
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.4,
+      "grammar_score": 0.0,
+      "coherence_score": 0.0,
+      "total": 0.4,
+      "reason": "Sentence has capital start and punctuation but lacks valid patterns.",
+      "discovered_bigrams": [
+        "the bias"
+      ],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 9,
+      "bigram_count": 1,
+      "phase": 2,
+      "details": {
+        "total_100": 40.0,
+        "structure_100": 40.0,
+        "patterns_100": 0.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Sentence has capital start and punctuation but lacks valid patterns.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766893664.839782
+  },
+  {
+    "generation": 4,
+    "agent_id": "8df11b0a",
+    "conversation": [
+      {
+        "agent_text": "The regulation talented archive sustainability fresh parliament.",
+        "openai_response": "That's an interesting phrase! Can you tell me what you mean by it?"
+      }
+    ],
+    "scores": {
+      "vocabulary_score": 0.6,
+      "grammar_score": 0.0,
+      "coherence_score": 0.0,
+      "total": 0.4,
+      "reason": "Sentence has capital start and punctuation but lacks valid patterns.",
+      "discovered_bigrams": [
+        "the regulation"
+      ],
+      "discovered_trigrams": [],
+      "is_valid_sentence": false,
+      "has_capital_start": true,
+      "has_punctuation_end": true,
+      "word_count": 7,
+      "bigram_count": 1,
+      "phase": 2,
+      "details": {
+        "total_100": 40.0,
+        "structure_100": 60.0,
+        "patterns_100": 0.0,
+        "coherence_100": 0.0,
+        "conversation_100": 0.0,
+        "reason": "Sentence has capital start and punctuation but lacks valid patterns.",
+        "phase_scored": true
+      }
+    },
+    "timestamp": 1766893743.7359989
   }
 ]
