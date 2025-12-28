@@ -1832,7 +1832,8 @@ async def websocket_endpoint(websocket: WebSocket):
         running_status = {
             "genome": state.model_states[ModelType.GENOME].is_running,
             "char_nn": state.model_states[ModelType.CHAR_NN].is_running,
-            "word_nn": state.model_states[ModelType.WORD_NN].is_running
+            "word_nn": state.model_states[ModelType.WORD_NN].is_running,
+            "word_genome": state.model_states[ModelType.WORD_GENOME].is_running
         }
         
         if state.current_model == ModelType.CONCURRENT:
