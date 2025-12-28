@@ -10,9 +10,22 @@ from openai import AsyncOpenAI
 from dotenv import load_dotenv
 from config import config
 from common_words import get_common_words, get_word_weight
-import torch
 
 load_dotenv()
+
+# Check if we should skip local ML models (for low-memory deployments)
+SKIP_LOCAL_MODELS = os.environ.get("SKIP_LOCAL_MODELS", "false").lower() == "true"
+
+# Only import torch if we need local models
+torch = None
+if not SKIP_LOCAL_MODELS:
+    try:
+        import torch as _torch
+        torch = _torch
+        print("[SCORER] PyTorch loaded successfully")
+    except Exception as e:
+        print(f"[SCORER] PyTorch not available: {e}")
+        SKIP_LOCAL_MODELS = True
 
 
 # =============================================================================
@@ -41,6 +54,8 @@ class PerplexityScorer:
     
     def _ensure_loaded(self):
         """Lazy load the model on first use."""
+        if SKIP_LOCAL_MODELS or torch is None:
+            return  # Skip loading if disabled or torch unavailable
         if self._model is None:
             try:
                 from transformers import GPT2LMHeadModel, GPT2TokenizerFast
@@ -63,6 +78,9 @@ class PerplexityScorer:
         """
         if not text or len(text.strip()) < 2:
             return 1000.0
+        
+        if SKIP_LOCAL_MODELS or torch is None:
+            return 200.0  # Return moderate perplexity when models disabled
         
         self._ensure_loaded()
         if self._model is None:
@@ -134,6 +152,8 @@ class RelevanceScorer:
     
     def _ensure_loaded(self):
         """Lazy load the model on first use."""
+        if SKIP_LOCAL_MODELS:
+            return  # Skip loading if disabled
         if self._model is None:
             try:
                 from sentence_transformers import SentenceTransformer
@@ -152,6 +172,9 @@ class RelevanceScorer:
         """
         if not text1 or not text2:
             return 0.0
+        
+        if SKIP_LOCAL_MODELS:
+            return 0.4  # Return moderate similarity when models disabled
         
         self._ensure_loaded()
         if self._model is None:

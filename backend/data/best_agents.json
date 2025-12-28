@@ -1,50 +1,5 @@
 [
   {
-    "generation": 10,
-    "agent_id": "d14c0c28",
-    "score": 0.28,
-    "exploration_rate": 0.02,
-    "vocabulary_size": 91,
-    "model_type": "word_nn",
-    "timestamp": 1766841050.298445
-  },
-  {
-    "generation": 11,
-    "agent_id": "597c01bc",
-    "score": 0.28,
-    "exploration_rate": 0.02,
-    "vocabulary_size": 91,
-    "model_type": "word_nn",
-    "timestamp": 1766841066.8309581
-  },
-  {
-    "generation": 12,
-    "agent_id": "9e6d9432",
-    "score": 0.28,
-    "exploration_rate": 0.02,
-    "vocabulary_size": 91,
-    "model_type": "word_nn",
-    "timestamp": 1766841084.659242
-  },
-  {
-    "generation": 13,
-    "agent_id": "597c01bc",
-    "score": 0.25,
-    "exploration_rate": 0.02,
-    "vocabulary_size": 91,
-    "model_type": "word_nn",
-    "timestamp": 1766841101.676485
-  },
-  {
-    "generation": 14,
-    "agent_id": "97a85e4b",
-    "score": 0.19000000000000003,
-    "exploration_rate": 0.02,
-    "vocabulary_size": 91,
-    "model_type": "word_nn",
-    "timestamp": 1766841118.0937338
-  },
-  {
     "generation": 15,
     "agent_id": "97a85e4b",
     "score": 0.28,
@@ -8998,5 +8953,50 @@
     "vocabulary_size": 100,
     "model_type": "word_genome",
     "timestamp": 1766898269.267005
+  },
+  {
+    "generation": 70,
+    "agent_id": "59c68ab8",
+    "score": 0.25,
+    "exploration_rate": 0.0948144677052747,
+    "vocabulary_size": 100,
+    "model_type": "word_genome",
+    "timestamp": 1766898654.686342
+  },
+  {
+    "generation": 71,
+    "agent_id": "bd972c33",
+    "score": 0.25,
+    "exploration_rate": 0.09292765979793974,
+    "vocabulary_size": 100,
+    "model_type": "word_genome",
+    "timestamp": 1766899168.669146
+  },
+  {
+    "generation": 72,
+    "agent_id": "f33f296d",
+    "score": 0.45,
+    "exploration_rate": 0.09107839936796074,
+    "vocabulary_size": 100,
+    "model_type": "word_genome",
+    "timestamp": 1766899451.660428
+  },
+  {
+    "generation": 73,
+    "agent_id": "8140d936",
+    "score": 0.6,
+    "exploration_rate": 0.08926593922053831,
+    "vocabulary_size": 100,
+    "model_type": "word_genome",
+    "timestamp": 1766912697.562643
+  },
+  {
+    "generation": 74,
+    "agent_id": "27cf849a",
+    "score": 0.45,
+    "exploration_rate": 0.0874895470300496,
+    "vocabulary_size": 100,
+    "model_type": "word_genome",
+    "timestamp": 1766913253.172033
   }
 ]
