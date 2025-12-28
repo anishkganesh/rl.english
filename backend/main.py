@@ -704,6 +704,12 @@ app.add_middleware(
 )
 
 
+# Health check endpoint for Railway/deployment
+@app.get("/")
+async def health_check():
+    return {"status": "ok", "service": "rl-english-backend"}
+
+
 class ConfigUpdate(BaseModel):
     num_agents: Optional[int] = None
     generation_time: Optional[float] = None
