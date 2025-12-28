@@ -2124,4 +2124,7 @@ async def get_agent_visualization(agent_id: str):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    # Use PORT env var for Railway, default to 8000 for local dev
+    port = int(os.environ.get("PORT", 8000))
+    print(f"[SERVER] Starting on port {port}")
+    uvicorn.run(app, host="0.0.0.0", port=port)
