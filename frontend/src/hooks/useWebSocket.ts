@@ -483,13 +483,16 @@ export function useWebSocket() {
               setState(s => {
                 const newConversations = { ...s.conversations };
                 for (const update of msg.updates!) {
-                  if (!newConversations[update.agent_id]) {
-                    newConversations[update.agent_id] = [];
+                  const agentId = update.agent_id ?? update.id;
+                  if (agentId) {
+                    if (!newConversations[agentId]) {
+                      newConversations[agentId] = [];
+                    }
+                    newConversations[agentId].push({
+                      agent_text: update.agent_text,
+                      openai_response: update.openai_response
+                    });
                   }
-                  newConversations[update.agent_id].push({
-                    agent_text: update.agent_text,
-                    openai_response: update.openai_response
-                  });
                 }
                 return { ...s, conversations: newConversations };
               });

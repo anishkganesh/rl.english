@@ -1,14 +1,5 @@
 [
   {
-    "generation": 26,
-    "agent_id": "c6b6e0d3",
-    "score": 0.22,
-    "exploration_rate": 0.02,
-    "vocabulary_size": 91,
-    "model_type": "word_nn",
-    "timestamp": 1766840342.546193
-  },
-  {
     "generation": 27,
     "agent_id": "df952b46",
     "score": 0.27999999999999997,
@@ -8998,5 +8989,14 @@
     "vocabulary_size": 100,
     "model_type": "word_genome",
     "timestamp": 1766895782.450681
+  },
+  {
+    "generation": 40,
+    "agent_id": "19ed235c",
+    "score": 0.3,
+    "exploration_rate": 0.17328578392284477,
+    "vocabulary_size": 100,
+    "model_type": "word_genome",
+    "timestamp": 1766895871.838159
   }
 ]
